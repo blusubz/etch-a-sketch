@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: black;
+}
+
+#btn {
+    margin: 10px;
+    color: yellow;
+    background-color: green;
+}
+
 .container {
     display: flex;
     flex-direction: row;
