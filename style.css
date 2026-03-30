@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --box-size: 16;
+}
+
 body {
     background-color: black;
 }
@@ -19,6 +23,9 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    overflow: hidden;
+    width: 750px; /* for window size of grid */
+    height: 750px; /* for window size of grid */
 }
 
 .container div{
@@ -28,7 +35,8 @@ body {
     align-content: center;
     background-color: black;
     color: violet;
-    border: 2px solid violet;
-    width: calc(100% / 16);
+    border: 1px solid violet;
+    width: calc(100% / var(--box-size)); /* for actual grid size, where we divide 100 by the grid size input */
+    /* height: calc(100% / var(--box-size)); */
     aspect-ratio: 1;
 }

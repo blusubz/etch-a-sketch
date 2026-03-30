@@ -21,6 +21,9 @@ btn.addEventListener('click', () => {
     // call createGrid function
     console.log('stub');
 
+    const root = document.documentElement;
+    root.style.setProperty('--box-size', input);
+
     createGrid(input);
 });
 
