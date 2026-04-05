@@ -30,14 +30,8 @@ body {
 }
 
 .container div{
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
     background-color: black;
-    color: violet;
     border: 1px solid violet;
     width: calc(100% / var(--box-size)); /* for actual grid size, where we divide 100 by the grid size input */
-    /* height: calc(100% / var(--box-size)); */
     aspect-ratio: 1;
 }
