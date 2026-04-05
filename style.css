@@ -23,6 +23,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    /* justify-content: center; */
     overflow: hidden;
     width: 750px; /* for window size of grid */
     height: 750px; /* for window size of grid */
