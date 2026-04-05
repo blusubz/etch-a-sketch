@@ -39,7 +39,15 @@ function createGrid(size) {
         
         // hover effect 
         div.addEventListener('mouseenter', () => {
-            div.style.backgroundColor = 'green';
+
+            // create random RGB colors
+            let r = Math.floor(Math.random() * 256);
+            let g = Math.floor(Math.random() * 256);
+            let b = Math.floor(Math.random() * 256);
+
+
+
+            div.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
         });
 
         // div.textContent = i + 1;
